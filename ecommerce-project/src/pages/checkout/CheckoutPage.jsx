@@ -1,13 +1,12 @@
 import './CheckoutPage.css'
-import './checkout-header.css'
-import { Header } from '../components/Header';
+import { CheckoutHeader } from './CheckoutHeader';
 
 export function CheckoutPage() {
     return (
         <>
         <title>Checkout</title>
 
-        <Header />
+        <CheckoutHeader />
 
         <div className="checkout-page">
         <div className="page-title">Review your order</div>
