@@ -4,9 +4,9 @@ import CheckmarkIcon from "../assets/images/icons/checkmark.png";
 import "./HomePage.css";
 import { useEffect, useState } from "react";
 
-export function HomePage() {
+export function HomePage({cart}) {
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  
 
 
   useEffect(() => {
@@ -16,10 +16,7 @@ export function HomePage() {
       });
 
 
-    axios.get('/api/cart-items')
-      .then((response) => {
-        setCart(response.data);
-      });
+    
   }, []);
 
   return (
